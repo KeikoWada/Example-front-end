@@ -8,8 +8,5 @@ export default Component.extend({
 //       // examplePojo.destroyRecord()
 //       this.sendAction('delete', this.get('example'))
 //     }
-//     // saveChange () {
-//     //   this.sendAction('saveExample', this.get('newExample'))
-//     // }
-// }
+
 });

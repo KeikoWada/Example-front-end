@@ -22,13 +22,14 @@ export default Route.extend({
       console.log('delete')
       example.destroyRecord()
         // .then(() => this.transitionTo('examples'))
-    }
+    },
     // // addItemToList (itemPojo) {
     // //   const item = this.get('store').createRecord('item', itemPojo)
     // //   return item.save()
     // // },
-    // save (pojp) {
-    //   example.save()
-    // }
+    updateExample (example) {
+      console.log(example)
+      example.save()
+    }
   }
 });
