@@ -20,6 +20,7 @@ export default Route.extend({
     },
 
     error (reason) {
+      console.error(reason)
       let unauthorized = reason.errors && reason.errors.some((error) =>
         error.status === '401'
       );
@@ -35,5 +36,6 @@ export default Route.extend({
 
       return false;
     },
+
   },
 });
