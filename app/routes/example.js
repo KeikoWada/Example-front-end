@@ -21,7 +21,7 @@ export default Route.extend({
     deleteExample (example) {
       console.log('delete')
       example.destroyRecord()
-        // .then(() => this.transitionTo('examples'))
+        .then(() => this.transitionTo('examples'))
     },
     // // addItemToList (itemPojo) {
     // //   const item = this.get('store').createRecord('item', itemPojo)

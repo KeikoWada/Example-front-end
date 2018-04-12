@@ -1,8 +1,9 @@
 <div>
   {{#each model as |example|}}
-    {{example.text}}
-
-
+    {{!-- {{example.text }} --}}
+{{#link-to 'example' example}}{{example.text}}{{/link-to}}
+{{!-- model is an array of example. 'example' is templat that we want, and second example --}}
+{{!-- is the like 'here is the id you want' --}}
   {{!-- {{fa-icon 'trash'}} --}}
   {{/each}}
 {{new-example create='createList'}}
